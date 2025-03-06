@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <style>
+    body {
+        background-color: rgb(96, 162, 238);
+    }
+    nav {
+    background-color:rgb(5, 33, 85); 
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+}
+        h2 {
+    color: white;
+    margin-left: 20px;
+    line-height: 8px;
+}
+       nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+       nav ul li {
+    display: inline;
+    margin: 0 15px;
+    font-size: 20px;
+    
+}
+      nav ul li a {
+    color: white;
+    font-weight: bold;
+}
+#About {
+    width: 60%;  
+    margin: 60px ; 
+    text-align: left; 
+    font-family: Arial, sans-serif;
+    line-height: 2;
+}
+
+#text {
+    font-size: 20px;
+    color: #15022b;
+    text-align: left; 
+}
+
+.intro {
+    font-size: 60px;
+    font-weight: bold;
+    color: #031529;
+    display: inline-block; 
+}
+#skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+}
+
+#skills table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-size: 20px;
+    color: rgb(15, 15, 15);
+}
+
+#skills th, #skills td {
+    border: 2px solid rgb(12, 11, 12);
+    padding: 15px;
+    text-align: center;
+    background-color: rgba(209, 27, 194, 0.808);
+}
+
+#skills th {
+    font-size: 24px;
+    background-color: rgba(168, 83, 175, 0.2);
+}
+#projects {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#color {
+    color: black;
+}
+#contact {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+}
+
+#contact input, #contact textarea {
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+    height: 10px;
+}
+#contact input[type="submit"] {
+    width: 150px; 
+}
+
+    </style>
+</head>
+<body>
+    <nav>
+        <h2>My Portfolio</h2>
+        <ul>
+            <li><a href="#About">About me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="About">
+        <p id="text"><span class="intro">hello! I'm Mahnoor,</span> 
+            <br>
+        a passionate front-end developer and technology enthusiast. I love creating user-friendly websites with clean and modern designs.</p>
+    </section>
+    <section id="skills">
+        <h1>My Skills</h1>
+    <table>
+        <tr>
+            <th>Skill</th>
+            <th>Proficiency</th>
+        </tr>
+        <tr>
+            <td>HTML</td>
+            <td>Advanced</td>
+        </tr>
+        <tr>
+            <td>CSS</td>
+            <td>Intermediate</td>
+        </tr>
+        <tr>
+            <td>JavaScript</td>
+            <td>Intermediate</td>
+        </tr>
+        <tr>
+            <td>Python</td>
+            <td>Beginner</td>
+        </tr>
+    </table>
+    </section>
+    <hr>
+    <section id="projects">
+        <h1>Projects</h1>
+        <h2 id="color">Portfolio Website</h2>
+        <p>A personal website to showcase my work.</p>
+        <h2 id="color">Virtual Assistant</h2>
+        <p> A smart assistant that helps users by processing commands efficiently</p>
+        <h2 id="color">Calculator</h2>
+        <p> A simple and efficient calculator for performing basic arithmetic operations 🔢</p>
+    </section>
+<hr>
+    <section id="contact">
+        <h2 id="color">Contact Me</h2>
+        <form>
+            <input type="text" name="name" placeholder="Your Name"><br>
+            <input type="email" name="email" placeholder="Your Email"><br>
+            <textarea name="message" placeholder="Your Message" rows="4"></textarea><br>
+            <input type="submit" value="Send Message">
+        </form>
+    </section>
+</body>
+</html> 
